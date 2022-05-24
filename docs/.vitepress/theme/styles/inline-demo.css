@@ -1,0 +1,107 @@
+.demo {
+  padding: 22px 24px;
+  border: 1px solid var(--vp-c-divider-light);
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-soft);
+  margin: 1.2em 0;
+  transition: background-color 0.5s ease;
+}
+
+.dark .demo {
+  background-color: var(--vp-c-bg-mute);
+}
+
+.demo p {
+  margin: 0;
+}
+
+.demo button {
+  background-color: var(--vp-button-brand-bg);
+  transition: background-color 0.5s;
+  padding: 4px 12px;
+  border: 1px solid;
+  border-color: var(--vp-button-brand-border);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-button-brand-text);
+}
+
+.demo button:hover {
+  border-color: var(--vp-button-brand-hover-border);
+  color: var(--vp-button-brand-hover-text);
+  background-color: var(--vp-button-brand-hover-bg);
+}
+
+.demo button + button {
+  margin-left: 1em;
+}
+
+.demo input,
+.demo textarea,
+.demo select {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+  padding: 0.2em 0.6em;
+  margin-top: 10px;
+	margin-right: 8px;
+  background: transparent;
+  transition: background-color 0.5s;
+}
+
+.dark .demo select {
+  background: var(--vt-c-bg-soft);
+}
+
+.dark .demo select option {
+  background: transparent;
+}
+
+.demo input:not([type]):focus,
+.demo textarea:focus,
+.demo select:focus {
+  outline: 1px solid var(--vp-button-brand-bg);
+}
+
+.demo select {
+  /* this was set by normalize.css */
+  -webkit-appearance: listbox;
+}
+
+.demo label {
+  margin: 0 1em 0 0.4em;
+}
+
+.demo select[multiple] {
+  width: 100px;
+}
+
+.demo h1 {
+  margin: 10px 0 0;
+}
+
+.demo .upload {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 1px dashed var(--vp-c-divider);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.demo .upload img {
+  width: 104px;
+  height: 104px;
+}
+.demo .upload input[type="file"] {
+  width: 128px;
+  height: 128px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}

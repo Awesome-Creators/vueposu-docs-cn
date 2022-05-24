@@ -1,0 +1,19 @@
+{
+  "name": "vueposu-docs",
+  "version": "1.0.0",
+  "description": "Documentation for Vueposu",
+  "repository": "https://github.com/awesome-creators/vueposu-docs",
+  "author": "Awesome Creators <awesomeweb@hotmail.com> (https://github.com/Awesome-Creators)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev docs --open",
+    "serve": "vitepress dev docs",
+    "build": "vitepress build docs"
+  },
+  "devDependencies": {
+    "vitepress": "1.0.0-draft.4",
+    "vue": "^3.2.36",
+    "vueposu": "^0.4.4"
+  }
+}
