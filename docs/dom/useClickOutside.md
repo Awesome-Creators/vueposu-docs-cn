@@ -30,5 +30,5 @@ export declare function useClickOutside(
   target: Target | Target[],
   eventHandler: RefTyped<(event: MouseEvent | TouchEvent) => void>,
   eventName: RefTyped<string | string[]> = defaultEvent
-): void
+): WatchStopHandle
 ```
